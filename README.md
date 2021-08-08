@@ -18,5 +18,8 @@ Recent research efforts in lifelong learning propose to grow a mixture or use an
 1. Tensorflow 2.1
 2. Python 3.6
 
+# How to run?
+python xxx.py then the results will be produced after the training.
+
 # BibTex
 
