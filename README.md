@@ -15,7 +15,7 @@ Recent research efforts in lifelong learning propose to grow a mixture or use an
 
 # Environment
 
-1. Tensorflow 1.5
+1. Tensorflow 2.1
 2. Python 3.6
 
 # BibTex
