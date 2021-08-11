@@ -1020,6 +1020,11 @@ class LifeLone_MNIST(object):
                     minIndex, minFID = self.Calculate_FID_Score(nextTaskIndex)
 
                     # minFID = 300
+                    #fid_hold is the threshold controlling the expansion of the network
+                    # Since Eq.7 and Eq.5 of the paper include the threshold,
+                    #evaluating the novelty of the incoming task is to compare
+                    #between K_{i,j} and the threshold.
+                    # Calculate_FID_Score is the function corresponds to the evaluation of Eq.8
 
                     print("Score")
                     self.fid_hold = 30
@@ -1041,43 +1046,43 @@ class LifeLone_MNIST(object):
 
             #Testing phase
 
-            index1 = self.Select_Expert_ByData2(self.arr1,self.labelArr1)
-            mnistError = self.Calculate_Accuracy_ByIndex(self.arr1_test,self.labelArr1_test, index1)
+            index1 = self.Select_Expert_ByData2(self.arr1, self.labelArr1)
+            acc1 = self.Calculate_Accuracy_ByIndex(self.arr1_test, self.labelArr1_test, index1)
             print("index:")
             print(index1)
 
-            index2 = self.Select_Expert_ByData2(self.arr2,self.labelArr2)
-            fashionError = self.Calculate_Accuracy_ByIndex(self.arr2_test,self.labelArr2_test, index2)
+            index2 = self.Select_Expert_ByData2(self.arr2, self.labelArr2)
+            acc2 = self.Calculate_Accuracy_ByIndex(self.arr2_test, self.labelArr2_test, index2)
             print("index:")
             print(index2)
 
-            index3 = self.Select_Expert_ByData2(self.arr3,self.labelArr3)
-            svhnError = self.Calculate_Accuracy_ByIndex(self.arr3_test,self.labelArr3_test, index3)
+            index3 = self.Select_Expert_ByData2(self.arr3, self.labelArr3)
+            acc3 = self.Calculate_Accuracy_ByIndex(self.arr3_test, self.labelArr3_test, index3)
             print("index:")
             print(index3)
 
-            index4 = self.Select_Expert_ByData2(self.arr4,self.labelArr4)
-            IFashionError = self.Calculate_Accuracy_ByIndex(self.arr4_test,self.labelArr4_test, index4)
+            index4 = self.Select_Expert_ByData2(self.arr4, self.labelArr4)
+            acc4 = self.Calculate_Accuracy_ByIndex(self.arr4_test, self.labelArr4_test, index4)
             print("index:")
             print(index4)
 
-            index5 = self.Select_Expert_ByData2(self.arr5,self.labelArr5)
-            IMNISTError = self.Calculate_Accuracy_ByIndex(self.arr5_test,self.labelArr5_test,index5)
+            index5 = self.Select_Expert_ByData2(self.arr5, self.labelArr5)
+            acc5 = self.Calculate_Accuracy_ByIndex(self.arr5_test, self.labelArr5_test, index5)
             print("index:")
             print(index5)
 
-            sum1 = mnistError + fashionError + svhnError + IFashionError + IMNISTError
+            sum1 = acc1 + acc2 + acc3 + acc4 + acc5
             sum1 = sum1 / 5.0
 
-            print(mnistError)
+            print(acc1)
             print('\n')
-            print(svhnError)
+            print(acc2)
             print('\n')
-            print(fashionError)
+            print(acc3)
             print('\n')
-            print(IFashionError)
+            print(acc4)
             print('\n')
-            print(IMNISTError)
+            print(acc5)
             print('\n')
             print(sum1)
 

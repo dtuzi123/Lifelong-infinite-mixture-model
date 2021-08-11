@@ -1002,6 +1002,11 @@ class LifeLone_MNIST(object):
                     minIndex, minFID = self.Calculate_FID_Score(nextTaskIndex)
 
                     # minFID = 300
+                    #fid_hold is the threshold controlling the expansion of the network
+                    # Since Eq.7 and Eq.5 of the paper include the threshold,
+                    #evaluating the novelty of the incoming task is to compare
+                    #between K_{i,j} and the threshold.
+                    # Calculate_FID_Score is the function corresponds to the evaluation of Eq.8
 
                     print("Score")
                     self.fid_hold = 100
