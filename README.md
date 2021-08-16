@@ -1,6 +1,6 @@
 # Lifelong infinite mixture model
 
-This is the implementation of the Lifelong infinite mixture model
+>📋 This is the implementation of the Lifelong infinite mixture model
 
 # Title : Lifelong Infinite Mixture Model Based on Knowledge-Driven Dirichlet Process
 
@@ -19,7 +19,10 @@ Recent research efforts in lifelong learning propose to grow a mixture or use an
 2. Python 3.6
 
 # How to run?
-python xxx.py then the results will be produced after the training.
+>📋 We provide an easy way to train and evaluate the performance of the model.
+
+>📋 Python xxx.py, the model will be automatically trained and then report the results after the training.
 
 # BibTex
+>📋 If you use our code, please cite our paper as:
 
