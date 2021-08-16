@@ -23,6 +23,8 @@ Recent research efforts in lifelong learning propose to grow a mixture or use an
 
 >📋 Python xxx.py, the model will be automatically trained and then report the results after the training.
 
+>📋 Different parameter settings of LMix would lead different results and we provide different settings as specified as "xxx_specific"
+
 # BibTex
 >📋 If you use our code, please cite our paper as:
 
