@@ -18,7 +18,7 @@ Recent research efforts in lifelong learning propose to grow a mixture or use an
 1. Tensorflow 2.1
 2. Python 3.6
 
-# How to run?
+# Training and evaluation
 >📋 We provide an easy way to train and evaluate the performance of the model.
 
 >📋 Python xxx.py, the model will be automatically trained and then report the results after the training.
