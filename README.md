@@ -1,6 +1,7 @@
 # Lifelong infinite mixture model
 
 >📋 This is the implementation of the Lifelong infinite mixture model
+
 >📋 Accepted by ICCV 2021
 
 # Title : Lifelong Infinite Mixture Model Based on Knowledge-Driven Dirichlet Process
