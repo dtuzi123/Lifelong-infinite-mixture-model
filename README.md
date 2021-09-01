@@ -1,12 +1,13 @@
 # Lifelong infinite mixture model
 
 >📋 This is the implementation of the Lifelong infinite mixture model
+>📋 Accepted by ICCV 2021
 
 # Title : Lifelong Infinite Mixture Model Based on Knowledge-Driven Dirichlet Process
 
-# Paper link
+# Paper link  
 
-
+https://arxiv.org/abs/2108.12278
 
 # Abstract
 
@@ -28,3 +29,11 @@ Recent research efforts in lifelong learning propose to grow a mixture or use an
 # BibTex
 >📋 If you use our code, please cite our paper as:
 
+@misc{ye2021lifelong,
+      title={Lifelong Infinite Mixture Model Based on Knowledge-Driven Dirichlet Process}, 
+      author={Fei Ye and Adrian G. Bors},
+      year={2021},
+      eprint={2108.12278},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
